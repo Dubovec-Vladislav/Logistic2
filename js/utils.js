@@ -133,7 +133,6 @@ function updateCarData(cars, lastPoint, time, mileage, route) {
 // Функция для обновления данных по последней точке
 function updateLastPointData(lastPoint, numberOfTrips, cars) {
   lastPoint.КоличествоЕздок = Math.max(0, lastPoint.КоличествоЕздок - numberOfTrips * cars.length);
-  console.log(lastPoint.КоличествоЕздок);
   for (let i = 0; i < lastPoint.КоличествоЕздок; i++) {
     if (i > cars.length - 1) break;
     lastPoint.ОставшаясяПотребность += cars[i].РеальнаяГрузоподъемность;
