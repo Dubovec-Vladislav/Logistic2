@@ -25,9 +25,9 @@ function createPointInputs() {
       <div class="main__form-field">
         <div class="main__form-label">Точка ${i + 1}</div>
         <div class="main__form-field-inputs">
-          <input value="10" class="main__form-field-input" type="number" id="depotDistance${i}" min="1" placeholder="Расстояние от депо">
-          <input value="10" class="main__form-field-input" type="number" id="careerDistance${i}" min="1" placeholder="Расстояние от карьера">
-          <input value="30" class="main__form-field-input" type="number" id="needs${i}" min="1" placeholder="Потребность в тоннах груза">
+          <input class="main__form-field-input" type="number" id="depotDistance${i}" min="1" placeholder="Расстояние от депо">
+          <input class="main__form-field-input" type="number" id="careerDistance${i}" min="1" placeholder="Расстояние от карьера">
+          <input class="main__form-field-input" type="number" id="needs${i}" min="1" placeholder="Потребность в тоннах груза">
         </div>
       </div>
     </div>
@@ -53,8 +53,8 @@ function createCarsInputs() {
       <div class="main__form-field">
         <div class="main__form-label">Машина ${i + 1}</div>
         <div class="main__form-field-inputs">
-          <input value="6" class="main__form-field-input" type="number" id="carryingList${i}" min="1" placeholder="Введите грузоподъемность">
-          <input value="0" class="main__form-field-input" type="number" id="loadFactor${i}" min="1" placeholder="Введите коэффициента для минимальной загрузки">
+          <input class="main__form-field-input" type="number" id="carryingList${i}" min="1" placeholder="Введите грузоподъемность">
+          <input class="main__form-field-input" type="number" id="loadFactor${i}" min="1" placeholder="Введите коэффициента для минимальной загрузки">
         </div>
       </div>
     </div>
