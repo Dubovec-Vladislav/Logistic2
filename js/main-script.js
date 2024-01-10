@@ -35,7 +35,7 @@ function main(depotToPointsDistances, careerToPointsDistances, needs, transport,
     'Маршрут': {},
     'НоминальнаяГрузоподъемность': carryingList[index], // !!!
     'РеальнаяГрузоподъемность': carryingList[index] * transport.capacityUtilizationFactor, // !!!
-    'МинимальнаяЗагрузка': carryingList[index] * minimumLoadFactors[index], // !!!
+    'МинимальнаяЗагрузка': carryingList[index] * transport.capacityUtilizationFactor * minimumLoadFactors[index], // !!!
   }));
 
   // Планирование последних поездок и возвращения в депо
